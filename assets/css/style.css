@@ -12,7 +12,7 @@ h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
 
-#header {
+#bgimg {
     background: url('../images/coffeehouse.jpg') center/cover no-repeat;
     height: 300px;
 }
