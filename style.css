@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
+.column {
+    border: 1px solid #000;
+    min-height: 4rem;
+}
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0;

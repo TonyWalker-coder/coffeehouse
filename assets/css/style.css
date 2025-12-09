@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap");
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center; /* horizontal alignment */
+  height: 100%; /* make sure it fills the header */
+  text-align: center;
+  color: white; /* optional: if overlaying on an image */
+}
+h1,h2,h3 {
+	font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
+#header {
+    background: url('../images/coffeehouse.jpg') center/cover no-repeat;
+    height: 300px;
+}
