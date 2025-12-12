@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .layout {
+  display: flex;
+  justify-content: flex-end; /* push image to the right */
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+/* Image box */
+.image-box img {
+  width: 30vw; /* ~30% of viewport width */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card box */
+.card-box {
+  position: absolute;
+  left: 5%; /* sits on left side */
+  top: 30%; /* adjust overlap vertically */
+  width: 7.5vw; /* ~25% of image width (30vw * 0.25) */
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 1rem;
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+  }
+
+  .card-box {
+    position: static; /* remove absolute overlap */
+    width: 80%; /* full width card on mobile */
+    margin-bottom: 1rem;
+  }
+
+  .image-box img {
+    width: 90%; /* scale image nicely on mobile */
+  }
+}
+</style></head>
+<body>
+<div class="layout">
+  <div class="card-box">
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>Some content goes here...</p>
+    </div>
+  </div>
+  <div class="image-box">
+    <img src="assets/images/coders-coffeehouse.jpg" alt="a typical coders workspace with laptop and of course a cup of coffee">
+  </div>
+</div>    
+</body>
+</html>

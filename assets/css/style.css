@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap");
+:root{
+    --offwhite:rgb(214, 201, 201);
+    --mug:hwb(26 35% 7%);
+    --itsfree:brightness(70%);
+
+}
 .vertical-center {
   display: flex;
   flex-direction: column;
@@ -6,12 +12,35 @@
   align-items: center; /* horizontal alignment */
   height: 100%; /* make sure it fills the header */
   text-align: center;
-  color: white; /* optional: if overlaying on an image */
+  color: var(--offwhite); /* optional: if overlaying on an image */
 }
+.cardlayout{
+    background-color: rgba(208, 91, 70, 0.886); 
+    padding: 40px; /* space inside the card */
+    color: var(--offwhite);
+
+}
+.cardlayout:hover{
+    background-color: rgba(208, 91, 70, 0.986); 
+
+}
+.cardlayout p{
+    font-size: larger;
+    padding: 20px;
+}
+
 h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
-
+.mug {
+    color: var(--mug);
+    font-size: larger;
+}
+.itsfree {
+    color: var(--itsfree);
+    font-weight: bold;
+    font-size: large;
+}
 #bgimg {
     background: url('../images/coffeehouse.jpg') center/cover no-repeat;
     height: 300px;
