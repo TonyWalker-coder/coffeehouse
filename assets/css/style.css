@@ -1,52 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap");
-:root{
-    --offwhite:rgb(214, 201, 201);
-    --mug:hwb(26 35% 7%);
-    --itsfree:brightness(70%);
 
+:root {
+  --offwhite: rgb(214, 201, 201);
+  --mug: hwb(26 35% 7%);
+  --itsfree: brightness(70%);
+  --card-bg: rgb(210, 105, 30);
+  --card-bg-hover: rgb(150, 60, 20);
 }
+
+/* Centered header text */
 .vertical-center {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical alignment */
-  align-items: center; /* horizontal alignment */
-  height: 100%; /* make sure it fills the header */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   text-align: center;
-  color: var(--offwhite); /* optional: if overlaying on an image */
-}
-#s-cardlayout{
-    background-color: rgb(210, 105, 30); 
-    padding: 40px; /* space inside the card */
-    color: var(--offwhite);
-
+  color: var(--offwhite);
 }
 
-#cardlayout{
-    background-color: rgb(210, 105, 30); 
-    padding: 40px; /* space inside the card */
-    color: var(--offwhite);
-
-}
-#cardlayout:hover {
-    background-color: rgb(150, 60, 20); /* dark charcoal */
-    color: white; /* invert text for contrast */
-}
-#cardlayout, #s-cardlayout {
+#cardlayout,
+#s-cardlayout {
   --bs-card-border-width: 0;
+  color: var(--offwhite);
+  padding: 40px; /* space inside the card */
   border: none;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   background-color: #f97316; /* or your preferred orange */
 }
 
+#cardlayout:hover {
+  background-color: rgb(150, 60, 20); /* dark charcoal */
+  color: white; /* invert text for contrast */
+}
 
-
-
-
-
-#s-cardlayout,#cardlayout p{
-    font-size: larger;
-    padding: 20px;
+#s-cardlayout,
+#cardlayout p {
+  font-size: larger;
+  padding: 20px;
 }
 
 .cardlayout {
@@ -55,30 +47,35 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-
-
-
-h1,h2,h3 {
-	font-family: 'Merienda One', 'Brush Script MT', cursive;
+#bgimg {
+  background: url("../images/coffeehouse.jpg") center/cover no-repeat;
+  height: 300px;
 }
+
 .navbar {
   background-color: #000 !important;
   margin-bottom: 15px;
 }
 
-
 .mug {
-    color: var(--mug);
-    font-size: larger;
+  color: var(--mug);
+  font-size: larger;
 }
 .itsfree {
-    color: var(--itsfree);
-    font-weight: bold;
-    font-size: large;
+  color: var(--itsfree);
+  font-weight: bold;
+  font-size: large;
 }
-#bgimg {
-    background: url('../images/coffeehouse.jpg') center/cover no-repeat;
-    height: 300px;
+
+h1,
+h2,
+h3 {
+  font-family: "Merienda One", "Brush Script MT", cursive;
+}
+
+/* Prevent content from hiding behind footer */
+main {
+  padding-bottom: 80px; /* match footer height */
 }
 
 /* Sticky footer always visible */
@@ -88,11 +85,32 @@ footer {
   left: 0;
   width: 100%;
   z-index: 1030; /* keeps it above other elements */
+  /*visual styles*/
+  background-color: #6f4e37;
+  padding: 1em;
+  text-align: center;
+}
+footer span {
+  color: silver;
 }
 
-/* Prevent content from hiding behind footer */
-main {
-  padding-bottom: 80px; /* match footer height */
+footer a {
+  color: beige;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 0.8rem;
 }
 
+footer p {
+  color: silver;
+}
 
+footer a:hover {
+  text-decoration: none;
+  color: chocolate;
+}
+
+fieldset {
+  border: none;
+  margin-top: 20px;
+}

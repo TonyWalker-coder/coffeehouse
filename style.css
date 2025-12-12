@@ -215,6 +215,11 @@ footer > p {
 	color: silver;
 }
 
+footer >a:hover {
+	text-decoration: none;
+	color: chocolate;
+}
+
 fieldset {
 	border: none;
 	margin-top: 20px;
