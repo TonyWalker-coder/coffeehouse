@@ -64,3 +64,209 @@
 </div>    
 </body>
 </html>
+
+
+
+
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Your navbar, main content, etc. -->
+  <main class="flex-grow-1">
+    <!-- Page content -->
+  </main>
+
+  <!-- Footer goes here -->
+</body>
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap");
+:root{
+    --offwhite:rgb(214, 201, 201);
+    --mug:hwb(26 35% 7%);
+    --itsfree:brightness(70%);
+
+}
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center; /* horizontal alignment */
+  height: 100%; /* make sure it fills the header */
+  text-align: center;
+  color: var(--offwhite); /* optional: if overlaying on an image */
+}
+#s-cardlayout{
+    background-color: rgb(210, 105, 30); 
+    padding: 40px; /* space inside the card */
+    color: var(--offwhite);
+
+}
+
+#cardlayout{
+    background-color: rgb(210, 105, 30); 
+    padding: 40px; /* space inside the card */
+    color: var(--offwhite);
+
+}
+#cardlayout:hover {
+    background-color: rgb(150, 60, 20); /* dark charcoal */
+    color: white; /* invert text for contrast */
+}
+#cardlayout, #s-cardlayout {
+  --bs-card-border-width: 0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  background-color: #f97316; /* or your preferred orange */
+}
+
+
+<!--clean but not working-->
+
+@import url("https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap");
+
+:root {
+  --offwhite: rgb(214, 201, 201);
+  --mug: hwb(26 35% 7%);
+  --itsfree: brightness(70%);
+  --card-bg: rgb(210, 105, 30);
+  --card-bg-hover: rgb(150, 60, 20);
+}
+
+/* Centered header text */
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: var(--offwhite);
+}
+
+/* Shared card styles */
+.cardlayout,
+#cardlayout,
+#s-cardlayout {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  background-color: var(--card-bg);
+  padding: 40px;
+  color: var(--offwhite);
+}
+
+#cardlayout:hover {
+  background-color: var(--card-bg-hover);
+  color: #fff;
+}
+
+#cardlayout p,
+#s-cardlayout p {
+  font-size: larger;
+  padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000 !important;
+  margin-bottom: 15px;
+}
+
+/* Icon tweaks */
+.mug {
+  color: var(--mug);
+  font-size: larger;
+}
+
+.itsfree {
+  color: var(--itsfree);
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Header background */
+#bgimg {
+  background: url('../images/coffeehouse.jpg') center/cover no-repeat;
+  height: 300px;
+}
+
+/* Sticky footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Prevent overlap with footer */
+main {
+  padding-bottom: 80px; /* match footer height */
+}
+
+
+
+
+
+
+
+
+#s-cardlayout,#cardlayout p{
+    font-size: larger;
+    padding: 20px;
+}
+
+.cardlayout {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+h1,h2,h3 {
+	font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+.navbar {
+  background-color: #000 !important;
+  margin-bottom: 15px;
+}
+
+
+.mug {
+    color: var(--mug);
+    font-size: larger;
+}
+.itsfree {
+    color: var(--itsfree);
+    font-weight: bold;
+    font-size: large;
+}
+#bgimg {
+    background: url('../images/coffeehouse.jpg') center/cover no-repeat;
+    height: 300px;
+}
+
+/* Sticky footer always visible */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* keeps it above other elements */
+}
+
+/* Prevent content from hiding behind footer */
+main {
+  padding-bottom: 80px; /* match footer height */
+}
+
+

@@ -61,6 +61,12 @@
 h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
+.navbar {
+  background-color: #000 !important;
+  margin-bottom: 15px;
+}
+
+
 .mug {
     color: var(--mug);
     font-size: larger;
@@ -74,3 +80,19 @@ h1,h2,h3 {
     background: url('../images/coffeehouse.jpg') center/cover no-repeat;
     height: 300px;
 }
+
+/* Sticky footer always visible */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* keeps it above other elements */
+}
+
+/* Prevent content from hiding behind footer */
+main {
+  padding-bottom: 80px; /* match footer height */
+}
+
+
