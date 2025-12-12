@@ -14,20 +14,49 @@
   text-align: center;
   color: var(--offwhite); /* optional: if overlaying on an image */
 }
-.cardlayout{
-    background-color: rgba(208, 91, 70, 0.886); 
+#s-cardlayout{
+    background-color: rgb(210, 105, 30); 
     padding: 40px; /* space inside the card */
     color: var(--offwhite);
 
 }
-.cardlayout:hover{
-    background-color: rgba(208, 91, 70, 0.986); 
+
+#cardlayout{
+    background-color: rgb(210, 105, 30); 
+    padding: 40px; /* space inside the card */
+    color: var(--offwhite);
 
 }
-.cardlayout p{
+#cardlayout:hover {
+    background-color: rgb(150, 60, 20); /* dark charcoal */
+    color: white; /* invert text for contrast */
+}
+#cardlayout, #s-cardlayout {
+  --bs-card-border-width: 0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  background-color: #f97316; /* or your preferred orange */
+}
+
+
+
+
+
+
+#s-cardlayout,#cardlayout p{
     font-size: larger;
     padding: 20px;
 }
+
+.cardlayout {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+
 
 h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
