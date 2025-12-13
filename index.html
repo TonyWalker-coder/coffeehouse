@@ -25,7 +25,9 @@
 
 <body>
   <section id="home">
-    <header id="bgimg" class="bg-dark text-white">
+    
+    <header id="bgimg" class="bg-dark text-white" aria-label="warm and inviting coffeehouse interior">
+
       <div class="vertical-center">
         <h1>Welcome to Coders Coffeehouse!</h1>
         <p>Turning caffeine into code since 1999.</p>
@@ -44,7 +46,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Drinks Menu</a>
+            <a class="nav-link" href="#drinks">Drinks Menu</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item">
@@ -57,10 +59,10 @@
 
 
   <main>
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid ">
+      <div class="row ">
         <!-- Left card -->
-        <div class="col-12 col-lg-4 position-relative">
+        <div class="col-12 col-md-4 position-relative">
           <div class="card cardlayout d-lg-block d-none position-absolute" style="width: 90%; top: 20%; left: 40%">
             <div class="card-body text-center" id="cardlayout">
               <h2 class="card-title">Reasons to love us</h2>
@@ -83,12 +85,78 @@
         </div>
 
         <!-- Right image -->
-        <div class="col-12 col-lg-8 text-end">
+        <div class="col-12 col-lg-8 text-end ">
           <img src="assets/images/coders-coffeehouse.jpg" class="rounded img-fluid" style="width: 90%"
-            alt="a typical coders workspace with laptop and of course a cup of coffee" />
+            alt="a typical coders workspace with laptop and of course a cup of coffee"/>
         </div>
       </div>
     </div>
+<!-- Drinks Menu Section -->
+
+
+<section id="drinks" class="text-center text-white my-3">
+<!-- Requires Bootstrap 5 -->
+<div class="container py-5">
+  <div class="row g-3 g-md-4 align-items-stretch">
+    <!-- Left card -->
+    <div class="col-12 col-md-4">
+      <div id="coffee-box" class="card h-100 shadow">
+        <div class="card-body">
+        <h3>Coffee</h3>
+        <ul>
+          <li>Latte</li>
+          <li>Americano</li>
+          <li>Cappuccino</li>
+          <li>Espresso</li>
+          <li>Irish Coffee</li>
+          <li>Macchiato</li>
+          <li>Flat White</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle card (lowered + overlapping on md+) -->
+    <div class="col-12 col-md-4">
+      <div id="tea-box" class="card h-100 shadow position-relative mt-md-5 mx-md-n3">
+        <div class="card-body">
+        <h3>Tea</h3>
+        <ul>
+          <li>Earl Grey</li>
+          <li>Green tea</li>
+          <li>Lemon tea</li>
+          <li>Peppermint tea</li>
+          <li>Ginger tea</li>
+          <li>Mint tea</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right card -->
+    <div class="col-12 col-md-4">
+      <div id="cold-drinks-box" class="card h-100 shadow">
+        <div class="card-body">
+        <h3>Cold drinks</h3>
+        <ul>
+          <li>Iced coffee</li>
+          <li>Ice Tea</li>
+          <li>Spring water</li>
+          <li>
+            Soft drinks
+            <ul>
+              <li>Coca Cola</li>
+              <li>Fanta</li>
+              <li>7up</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
     <section id="contact" class="my-5"></section>
     <div class="container-fluid my-5">

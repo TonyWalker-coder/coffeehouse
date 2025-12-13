@@ -73,6 +73,11 @@ h3 {
   font-family: "Merienda One", "Brush Script MT", cursive;
 }
 
+ul, ol {
+	padding: 0;
+	list-style-type: none;
+}
+
 /* Prevent content from hiding behind footer */
 main {
   padding-bottom: 90px; /* match footer height */
@@ -129,4 +134,26 @@ fieldset {
 }
 #home{
   /*placeholder to mark home section*/
+}
+#drinks {
+	padding: 1rem 0;
+	margin-bottom: 80px;
+	background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg') center center / cover no-repeat fixed;
+}
+#coffee-box {
+	background-color: brown;
+    width: 100%;
+    top: 0%;
+    left: 15%
+}
+#tea-box {
+	background-color: #6f4e37;
+	z-index: 3;
+}
+
+#cold-drinks-box {
+	background-color: chocolate;
+    width: 100%;
+    top: 0%;
+    left: -15%
 }
