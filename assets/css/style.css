@@ -157,3 +157,12 @@ fieldset {
     top: 0%;
     left: -15%
 }
+#reasonsbox {
+  background-color: sienna;
+  width: 90%;
+  top: 20%;
+  left: 40%
+}
+#box-nb {
+  border: none;
+}
