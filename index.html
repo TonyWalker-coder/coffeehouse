@@ -24,12 +24,14 @@
 </head>
 
 <body>
-  <header id="bgimg" class="bg-dark text-white">
-    <div class="vertical-center">
-      <h1>Welcome to Coders Coffeehouse!</h1>
-      <p>Turning caffeine into code since 1999.</p>
-    </div>
-  </header>
+  <section id="home">
+    <header id="bgimg" class="bg-dark text-white">
+      <div class="vertical-center">
+        <h1>Welcome to Coders Coffeehouse!</h1>
+        <p>Turning caffeine into code since 1999.</p>
+      </div>
+    </header>
+  </section>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><span class="mug fa-sharp fa-solid fa-mug-saucer"></span> Coders
@@ -40,11 +42,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item">
             <a class="nav-link" href="#">Drinks Menu</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item">
             <a class="nav-link" href="#">Win<span class="itsfree"> FREE </span>Coffee</a>
           </li>
@@ -52,6 +54,7 @@
       </div>
     </div>
   </nav>
+
 
   <main>
     <div class="container-fluid">
@@ -87,37 +90,52 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row justify-content-center text-center">
-        <h2 class="w-100">Contact</h2>
+    <section id="contact" class="my-5"></section>
+    <div class="container-fluid my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <!-- Lone Striker: Opening Times -->
+      <div class="row justify-content-center mb-4">
         <div class="col-12 col-lg-4">
-          <div class="card">
+          <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title"><strong>Open times</strong></h5>
-              <p class="card-text">	Open	Close<br>Mon - Fri	09:00	21:00<br>Weekend	10:00	22:00</p>
+              <h5 class="card-title">Opening Times</h5>
+              <p class="card-text">
+                Mon–Fri: 8am – 6pm<br>
+                Sat: 9am – 5pm<br>
+                Sun: Closed
+              </p>
             </div>
           </div>
-
-
         </div>
-        <div class="col-12 col-lg-4">
-          <div class="card">
+      </div>
+
+
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card text-center h-100">
             <div class="card-body">
-              <h5 class="card-title"><strong>Address</strong></h5>
+              <h5 class="card-title">Visit Us</h5>
+              <p class="card-text">
               <p class="card-text">Coders Coffeehouse,<br>42 Coffeebean street,<br>Dublin</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
-          <div class="card">
+        <!-- Card 2 -->
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card text-center h-100">
             <div class="card-body">
-              <h5 class="card-title"><strong>Get in touch</strong></h5>
-              <p class="card-text"><strong>Phone:</strong> 012 345 678 910<br><strong>Email:</strong> email@coderscoffeehouse.com</p>
+              <h5 class="card-title">Get in touch</h5>
+              <p class="card-text"><strong>Phone:</strong> 012 345 678 910<br><strong>Email:</strong>
+                email@coderscoffeehouse.com</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </section>
+
+
 
 
 
@@ -126,7 +144,7 @@
     </section>
 
   </main>
-  <footer class="footer-bgc text-white text-center py-3 mt-auto">
+  <footer class="bg-dark text-light text-center py-3 mt-auto">
     <div class="container">
       <span>Find us on:</span>
 

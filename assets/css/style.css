@@ -4,7 +4,7 @@
   --offwhite: rgb(214, 201, 201);
   --mug: hwb(26 35% 7%);
   --itsfree: brightness(70%);
-  --card-bg: rgb(210, 105, 30);
+  --card-bg: lab(48% 41.18 39.36);
   --card-bg-hover: rgb(150, 60, 20);
 }
 
@@ -27,11 +27,11 @@
   border: none;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-  background-color: #f97316; /* or your preferred orange */
+  background-color: var(--card-bg);
 }
 
 #cardlayout:hover {
-  background-color: rgb(150, 60, 20); /* dark charcoal */
+  background-color: var(--card-bg-hover); /* dark charcoal */
   color: white; /* invert text for contrast */
 }
 
@@ -75,7 +75,7 @@ h3 {
 
 /* Prevent content from hiding behind footer */
 main {
-  padding-bottom: 80px; /* match footer height */
+  padding-bottom: 90px; /* match footer height */
 }
 
 /* Sticky footer always visible */
@@ -115,10 +115,6 @@ fieldset {
   margin-top: 20px;
 }
 /* map */
-#map-wrapper {
-
-
-}
 #map {
 
     width: 100%;
@@ -127,4 +123,10 @@ fieldset {
     height: 100%;
     min-height: 100vh;
     	
+}
+#contact{
+  /*placeholder to mark contact section*/
+}
+#home{
+  /*placeholder to mark home section*/
 }

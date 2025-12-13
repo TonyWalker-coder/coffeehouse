@@ -300,8 +300,7 @@ label {
 /* map */
 #map-wrapper {
 
-    height: 300px;
-    margin-bottom: 108px;
+
 }
 
 #map {
@@ -338,3 +337,4 @@ label {
 .gap-20 {
     gap: 20px;
 }
+body{padding-bottom: 103px;}
